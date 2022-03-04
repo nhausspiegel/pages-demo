@@ -1,1 +1,12 @@
 <p>Hello there!</p>
+
+<!-- Make sure to include the module type as the script type
+     if you are importing into an HTML file. You can name your module
+     (here, module.js) any way you like. -->
+     <script type="module">
+        import { cube, foo, graph } from "./module.js";
+      
+        graph.draw();
+        console.log(cube(3)); // 27
+        console.log(foo); // 4.555806215962888
+      </script>
